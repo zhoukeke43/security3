@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+系统首页
+<div>
+    当前用户是:
+
+    <form action="/logout" method="post">
+        <span th:text="${T(chinobot.security3.common.security.utils.SecurityUtils).getCurrentUser()}"></span>
+        <br/>
+        <input type="submit" value="退出">
+    </form>
+</div>
+
+</body>
+</html>
